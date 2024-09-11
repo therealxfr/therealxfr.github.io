@@ -1,0 +1,31 @@
+/* Navigation bar styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Style for the list and remove default padding/margin */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style each list item in the navigation */
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Style the anchor links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #444;
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    background-color: #555;
+}
