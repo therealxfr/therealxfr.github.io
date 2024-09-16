@@ -1,0 +1,36 @@
+/* General styles */
+h1 {
+    color: #CC33FF;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #CC33FF;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+/* Fluid layout with flexbox */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Media query for mobile layout */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    blockquote {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
