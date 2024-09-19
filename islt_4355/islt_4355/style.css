@@ -1,0 +1,28 @@
+/* General styles */
+h1 {
+    color: #CC33FF;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #CC33FF;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Reduce font size for headers */
+    }
+
+    blockquote {
+        font-size: 14px; /* Adjust blockquote size */
+        padding-left: 5px; /* Reduce padding */
+    }
+
+    main p {
+        font-size: 16px; /* Reduce paragraph font size */
+    }
+}
