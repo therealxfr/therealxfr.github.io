@@ -1,0 +1,102 @@
+/* Main navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  z-index: 1000;
+}
+
+nav ul ul li {
+  display: block;
+}
+
+nav ul ul li a {
+  padding: 10px 20px;
+  background-color: #444;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li a:hover, nav ul ul li a:hover {
+  background-color: #555;
+}
+
+nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* Mobile navigation */
+nav input[type="checkbox"] {
+  display: none;
+}
+
+nav label {
+  display: none;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  nav label {
+      display: block;
+  }
+
+  nav ul {
+      display: none;
+      position: absolute;
+      top: 50px;
+      width: 100%;
+      background-color: #333;
+      padding: 0;
+  }
+
+  nav input[type="checkbox"]:checked + ul {
+      display: block;
+  }
+
+  nav ul li {
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul li ul {
+      position: static;
+  }
+}
+
+/* Ensures dropdown on mobile appears when clicked */
+.show {
+  display: block !important;
+}
