@@ -1,0 +1,95 @@
+ul li {
+  display: inline-block;  /* Ensures navigation items are horizontal */
+  position: relative;     /* Sets the parent element as a reference for the drop-down */
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;      /* Consistent padding for all items */
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;     /* Unified text style for all items */
+  border-radius: 5px;      /* Optional: Rounded corners for a modern look */
+  margin-right: 10px;      /* Adds spacing between menu items */
+}
+
+/* Drop-down list styling */
+nav ul ul {
+  display: none;            /* Hidden by default */
+  position: absolute;        /* Positioned relative to the parent */
+  top: 100%;                 /* Places the drop-down below the parent link */
+  left: 0;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1000;             /* Ensures the drop-down appears on top of other elements */
+}
+
+nav ul ul li {
+  display: block;
+}
+
+nav ul ul li a {
+  padding: 10px 20px;        /* Consistent padding for dropdown items */
+  background-color: #444;
+  text-decoration: none;
+  color: white;
+}
+
+/* Display drop-down on hover */
+nav ul li:hover > ul {
+  display: block;  /* Shows the drop-down when you hover over the parent list item */
+}
+
+/* Styling for hover effect on all links */
+nav ul li a:hover, nav ul ul li a:hover {
+  background-color: #555;
+}
+
+/* Optional: Remove margin on the last item for alignment */
+nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* *********************************************************************** */
+
+/* Media query for screens smaller than or equal to 600px */
+@media (max-width: 600px) {
+  nav ul {
+      padding-left: 0; /* Ensure no extra space on smaller screens */
+  }
+
+  nav ul li {
+      display: block; /* Stack items vertically */
+      margin-bottom: 10px; /* Add spacing between items */
+  }
+
+  nav ul li a {
+      display: block;
+      padding: 10px 0; /* Adjust padding for better touch interaction */
+      margin-right: 0; /* Remove any horizontal margin */
+  }
+
+  nav ul ul { /* Ensure the dropdown also stacks correctly */
+      position: relative;
+  }
+}
+
+/* Media query for screens smaller than or equal to 600px */
+@media (max-width: 600px) {
+  nav ul li {
+      display: block; /* Stack items vertically */
+      margin-bottom: 10px; /* Optional: add spacing between items */
+  }
+
+  nav ul li a {
+      display: block; /* Ensure links take up full width */
+      padding: 10px 0; /* Adjust padding for better touch interaction */
+  }
+
+  nav ul ul { /* Ensure the dropdown also stacks correctly */
+      position: relative;
+  }
+}
