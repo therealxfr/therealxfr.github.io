@@ -1,0 +1,84 @@
+<!--
+
+*****************************************************************************
+
+Title:  Work Page
+
+Use:  For the Work page of the Portfolio Website
+
+Author:  Xavier Frazier
+
+School/Term:  University of Missouri - Columbia, Fall 2024
+
+Developed: September 12, 2024
+
+Tested:  September 13th, 2024; Passed on Safari.
+
+******************************************************************************
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="workstyle.css">
+    <title>Work Experience</title>
+    <link rel="stylesheet" href="nav.css"> <!-- Link to nav-specific styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">   
+    <style>
+        body {
+            background-color: #fed5ac; /* Beige background */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reflection.html">Reflections</a></li>
+        <li><a href="#contact.html">Contact</a></li>
+        <li>
+            <a href="#">Projects</a>
+            <ul> <!-- Drop-down list -->
+                <li><a href="#learn.html">Learn</a></li>
+                <li><a href="#project.html">Projects</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+        <!-- Title -->
+        <h1>Work Experience</h1>
+
+        <!-- Work experience cards with navigation -->
+        <div class="carousel">
+            <div class="arrow">&#8249;</div> <!-- Left arrow -->
+            <div class="cards">
+                <div class="card">
+                    <img src="person1.png" alt="Person 1">
+                    <p>Commonwealth Edison: Design and Planning Intern</p>
+                </div>
+                <div class="card">
+                    <img src="person2.png" alt="Person 2">
+                    <p>The Boeing Company: MCHW & CommNav Intern</p>
+                </div>
+                <div class="card">
+                    <img src="person3.png" alt="Person 3">
+                    <p>Wight and Company: Project Management Intern</p>
+                </div>
+            </div>
+            <div class="arrow">&#8250;</div> <!-- Right arrow -->
+        </div>
+    </div>
+</body>
+</html>
