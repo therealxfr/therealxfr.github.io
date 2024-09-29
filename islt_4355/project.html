@@ -1,0 +1,182 @@
+<!--
+
+*****************************************************************************
+
+Title:  Work Page
+
+Use:  For the Work page of the Portfolio Website
+
+Author:  Xavier Frazier
+
+School/Term:  University of Missouri - Columbia, Fall 2024
+
+Developed: September 12, 2024
+
+Tested:  September 13th, 2024; Passed on Safari.
+
+These internships have given me a great insight into what my desired profession may look like after college. I have gained plenty of experience in all three of my internships that I will use wherever I end up post gradutation. I am so grateful and blessed to have had the privelage to be employed by these companies that gave me the opportunities to learn, contribute, and showcase the skills and knowledge that I have obtained from my undergraduate career.
+
+******************************************************************************
+
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Work Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"> <!-- General styles -->
+    <link rel="stylesheet" href="nav.css"> <!-- Navigation-specific styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #fed5ac; /* Beige background */
+        }
+
+        .carousel {
+            display: flex;
+            align-items: center;  /* Center the arrows vertically with the cards */
+            justify-content: space-between;
+        }
+
+        .arrow {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .cards {
+            display: flex; /* Flexbox to lay the cards horizontally */
+            justify-content: center; /* Centers cards horizontally */
+            gap: 20px; /* Adds space between cards */
+        }
+
+        .card {
+            width: 250px;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-icons {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Xavier's Website!</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="reflection.html">Reflections</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li>
+                <a href="#">Projects</a>
+                <ul> <!-- Drop-down list -->
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="project.html">Work</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Title -->
+    <h1>Work Experience</h1>
+
+    <!-- Work experience cards with navigation -->
+    <div class="carousel"></div>
+        <div class="cards">
+            <div class="card">
+                <img src="comed.jpg" alt="Person 1">
+                <p>Commonwealth Edison: Design and Planning Intern</p>
+            </div>
+            <div class="card">
+                <img src="boeing.jpg" alt="Person 2">
+                <p>The Boeing Company: MCHW & CommNav Intern</p>
+                <em>I am so grateful and blessed to have had the privelage to be employed by these companies that gave me the opportunities to learn, contribute, and showcase the skills and knowledge that I have obtained from my undergraduate career.</em>
+            </div>
+            <div class="card">
+                <img src="wight.jpg" alt="Person 3">
+                <p>Wight and Company: Project Management Intern</p>
+            </div>
+        </div>
+    </div>
+
+    <main> 
+        <h1>Internship Background</h1>
+        <h3>The Boeing Company</h3>
+        <p>Actively studied military standards for government aircraft requests. Prepared Statements of Work, analyzed drawings, documents, and wiring diagrams for AWACS aircraft, and supported the LRU Qualification process, ensuring the testing and approval of devices used in aircraft for missions across different countries.</p>
+        <h3>Commonwealth Edison</h3>
+        <p>Gained an understanding of permit proposals, cross-section maps, manholes, and the differences between overhead and underground systems, as well as applications such as TED. Modeled a 26-mile underground fiber route, identifying the most efficient duct locations to optimize costs through cost/benefit analysis. Additionally, learned about transformers, fuses, and communication requirements to improve power distribution efficiency by up to 40%.</p>
+        <h3>Wight & Co.</h3>
+        <p>Gained insight into weekly preplanning and the ongoing construction management process, including coordinating with companies specializing in areas like glass and concrete. Participated in meetings with other companies involved in the project, learning about key safety regulations, site diversity, pricing discussions, work progress, efficiency, and critical deadlines that must be met.</p>
+        <blockquote>
+            "For I know the plans I have for you," declares the Lord, "plans to prosper you and <em>not</em> to harm you, plans to give you a hope <em>and</em> a future."
+        </blockquote>
+    </main>
+ <!-- Table Section -->
+ <figure>
+    <table>
+        <caption>Work Experience Timeline</caption>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Commonwealth Edison</td>
+                <td>Design and Planning Intern</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>The Boeing Company</td>
+                <td>MCHW & CommNav Intern</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Wight and Company</td>
+                <td>Project Management Intern</td>
+                <td>2024</td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+    <footer>
+        <ul>
+            <li>
+                <p>&copy; 2024 Xavier Frazier. All rights reserved.</p>
+                <p><img src="email.png" alt="Email" width="24" height="24" class="footer-icons"> Email: <a href="mailto:xrfgbf@umsystem.edu">xrfgbf@umsystem.edu</a></p>
+            </li>
+            <li>
+                <p><img src="phone.png" alt="Phone" width="24" height="24" class="footer-icons"> Phone: 708-513-5361</p>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
